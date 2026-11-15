@@ -1,3 +1,10 @@
+# 🤐 Le chat sono private. Su GitHub vanno SOLO i pesi del modello.
+data/
+chats/
+*.txt
+!requirements.txt
+*.parquet
+
 # python
 .venv/
 __pycache__/
