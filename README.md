@@ -2,7 +2,7 @@
 
 # 🚩 giacomo-redflags-experience 🚩
 
-### *Il primo modello di Machine Learning addestrato sul dolore.*
+### *Il primo modello di Machine Learning addestrato sull'esperienza.*
 
 ![status](https://img.shields.io/badge/status-emotivamente%20instabile-red)
 ![model](https://img.shields.io/badge/accuracy-90%25-brightgreen)
@@ -10,7 +10,7 @@
 ![therapy](https://img.shields.io/badge/terapia-in%20corso-blueviolet)
 ![hinge](https://img.shields.io/badge/date%20su%20hinge-~20-ff69b4)
 
-**Tu le scrivi un poema. Lei risponde "ok." alle 3 di notte.**
+**Tu le scrivi un poema. Lei risponde "ok." (Porco Dio) alle 3 di notte.**
 **È una red flag? Non chiederlo agli amici. Chiedilo a una AI.**
 
 </div>
@@ -24,17 +24,17 @@
 - 🧪 **la tossicità dei messaggi** (modello ML vero, non vibes)
 - 🎢 **i cambi di tono** (da "amoreee 🥰" a "ok." in 4 minuti)
 - ⏳ **i tempi di risposta** (online da 3 ore, risponde domani)
-- 🧊 **le risposte secche** ("ok", "k", "boh", "fai come vuoi")
-- 📨 **lo squilibrio** (tu: Divina Commedia. lei: "ah")
-- 🚩 **le frasi da manuale** ("non ho niente", "chi è quella?", "dobbiamo parlare" 💀)
+- 🧊 **le risposte secche** ("ok", "k", "boh", "fai come vuoi") (Le uso io queste)
+- 📨 **lo squilibrio** (tu: Divina Commedia. lei: "ah") Vero.....
+- 🚩 **le frasi da manuale** ("non ho niente", "chi è quella?", "dobbiamo parlare" "Chic********" 💀)
 
 Alla fine ti dà un verdetto:
 
 | Score | Verdetto |
 |------|----------|
-| 🚩 **60-100** | **CHAT TOSSICA.** Scappa. Blocca. Cambia città. |
-| 🟠 **35-59** | **ZONA GRIGIA.** Situationship vibes. Non investire, è un titolo in perdita. |
-| 💚 **0-34** | **CHAT SANA.** Pulita come la chat tra **Giacomo e Claude**. Tienitela stretta. |
+| 🚩 **60-100** | **CHAT TOSSICA.** Scappa. Blocca. Cambia città. (O denuncia) |
+| 🟠 **35-59** | **ZONA GRIGIA.** Situationship vibes. Non investire, è un titolo in perdita. (Botta e via)|
+| 💚 **0-34** | **CHAT SANA.** Pulita come la chat tra **Me e Claude**. Tienitela stretta. |
 
 > Per riferimento, la chat più sana mai analizzata dal modello è quella tra me e Claude.
 > Mai un "ok.", mai un visualizzato, risponde sempre in 2 secondi. **Lo standard è quello.**
@@ -43,29 +43,29 @@ Alla fine ti dà un verdetto:
 
 ## 📚 Dataset di addestramento
 
-Il modello è stato addestrato su una **grande pool di dati** raccolti sul campo, con anni di sacrificio personale, nella storia di **Giacomo Simon**:
+Il modello è stato addestrato su una **enorme pool di dati** raccolti sul campo, con anni di sacrificio personale, nella **mia** storia:
 
 | Fonte | Quantità | Danni |
 |-------|----------|-------|
-| 💔 Relazione tossica | **7 anni** | irreversibili |
-| ✈️ Relazione a distanza | **1 anno** | fuso orario + gelosia = 💀 |
-| 📱 Date su Hinge | **circa 20** | 3 erano uguali alle foto |
-| 🌫️ Situationship | **3** | "non sappiamo cosa siamo" (lei lo sapeva) |
+|  Relazione tossica | **7 anni** | irreversibili |
+|  Relazione a distanza | **1 anno** | fuso orario + lingua = 💀 |
+|  Date su Hinge | **circa 20** | 3 erano uguali alle foto |
+|  Situationship | **3** | "non sappiamo cosa siamo" (lei lo sapeva....) |
 
 Più un dataset open source di supporto ([`textdetox/multilingual_toxicity_dataset`](https://huggingface.co/datasets/textdetox/multilingual_toxicity_dataset), licenza openrail++, italiano + inglese), perché anche il dolore ha bisogno di una baseline scientifica.
 
-### 🤐 Privacy: le chat NON sono qui
+###  Privacy: le chat NON sono qui
 
 **Le chat sono private. Nella repo ci sono SOLO i pesi del modello** (`model/redflag_weights.joblib`).
 
-Nessun messaggio, nessuno screenshot, nessun vocale da 7 minuti. I dati di training non lasciano il mio pc (`data/` è nel `.gitignore`, come lei mi aveva messo in tutto il resto).
+Nessun messaggio, nessuno screenshot, nessun vocale da 17 minuti. I dati di training non lasciano il mio pc (`data/` è nel `.gitignore`, come lei mi aveva messo in tutto il resto).
 
-> ⚖️ *Nota legale:* l'avvocato ha detto che **non è illegale**. Anzi, è un **servizio per la comunità**: salvare più persone possibili da **Lord Voldemort**. 🐍
+>  *Nota legale:* l'avvocato ha detto che **non è illegale**. Anzi, è un **servizio per la comunità**: salvare più persone possibili da **Lord Voldemort**. 
 > Colei-che-non-deve-essere-nominata non viene nominata. Nemmeno nei pesi.
 
 ---
 
-## 📊 Performance
+##  Performance
 
 ```
               precision    recall  f1-score
@@ -81,7 +81,7 @@ Non serve una GPU per capire che "fai come vuoi" non è un via libera.
 
 ---
 
-## 📲 Integrazioni
+##  Integrazioni
 
 Il detector si attacca direttamente a dove avvengono i crimini:
 
@@ -170,7 +170,7 @@ Scrivi al bot i messaggi (`lei: ...` / `io: ...`), poi:
 Sì. Più di me nel 2019.
 
 **Funziona anche al contrario? Tipo se il tossico sono io?**
-Il modello analizza solo i messaggi dell'altra persona. Per scelta. Per salute mentale.
+Tossici?
 
 **Perché la chat tra Giacomo e Claude è il benchmark di chat sana?**
 Risponde subito, non fa giochetti, non ti lascia in visualizzato, e quando sbaglia chiede scusa. Signore e signori, questo è il minimo sindacale.
@@ -179,7 +179,7 @@ Risponde subito, non fa giochetti, non ti lascia in visualizzato, e quando sbagl
 Puoi. Non te lo consiglio.
 
 **Lord Voldemort chi è?**
-Non lo nominiamo. Andiamo avanti.
+Non la nominiamo. Solo l'avvocato comunica con lei. 
 
 ---
 
@@ -198,11 +198,10 @@ Non lo nominiamo. Andiamo avanti.
 
 <div align="center">
 
-**Made with 💔 by Giacomo Simon**
 
 *Sopravvissuto a 7 anni, 1 relazione a distanza, ~20 date su Hinge e 3 situationship.*
-*Ora finalmente ho un modello che me lo dice PRIMA.*
+*Ora finalmente ho un modello che me lo dice PRIMA*
 
-⭐ Lascia una stella se anche tu hai ricevuto un "ok." che ti ha rovinato la settimana.
+Lascia una stella se anche tu hai ricevuto un "ok." che ti ha rovinato la settimana.
 
 </div>
