@@ -49,7 +49,7 @@ Il modello è stato addestrato su una **enorme pool di dati** raccolti sul campo
 |-------|----------|-------|
 |  Relazione tossica | **7 anni** | irreversibili |
 |  Relazione a distanza | **1 anno** | fuso orario + lingua = 💀 |
-|  Date su Hinge | **circa 20** | 3 erano uguali alle foto |
+|  Date su Hinge | **Abbastanza** | 3 erano uguali alle foto |
 |  Situationship | **3** | "non sappiamo cosa siamo" (lei lo sapeva....) |
 
 Più un dataset open source di supporto ([`textdetox/multilingual_toxicity_dataset`](https://huggingface.co/datasets/textdetox/multilingual_toxicity_dataset), licenza openrail++, italiano + inglese), perché anche il dolore ha bisogno di una baseline scientifica.
