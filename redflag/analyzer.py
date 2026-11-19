@@ -27,7 +27,7 @@ RISPOSTE_SECCHE = {
     "ok", "ok.", "k", "kk", "okay", "va bene", "vabbè", "vabbe", "boh", "ah",
     "mh", "mmh", "si", "sì", "no", "fai tu", "come vuoi", "fai come vuoi",
     "niente", "nulla", "lascia stare", "lascia perdere", "ah ok", "ok ciao",
-    "whatever", "fine", "sure", ".", "...",
+    "whatever", "fine", "sure", "👍", ".", "...",
 }
 
 # Frasi che il dataset non conosce ma ogni uomo sì
