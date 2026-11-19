@@ -121,8 +121,9 @@ def analizza_chat(messaggi, io=None):
 
     # 🧮 La formula segreta (calibrata su 7 anni di dolore)
     punteggio = (
-        35 * min(tox_media * 2, 1.0)            # tossicità media dei messaggi
-        + 10 * tox_picco                         # il messaggio peggiore
+        # sotto 0.3 è rumore (anche "buongiorno" a volte sembra passivo-aggressivo)
+        35 * min(max(tox_media - 0.3, 0) / 0.4, 1.0)  # tossicità media dei messaggi
+        + 10 * max(tox_picco - 0.3, 0) / 0.7     # il messaggio peggiore
         + 10 * min(sbalzi_umore * 3, 1.0)        # cambi di tono
         + 15 * secche                            # "ok."
         + 10 * min(len(frasi_trovate) / 2, 1.0)  # frasi da manuale
