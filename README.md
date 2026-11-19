@@ -192,7 +192,8 @@ Non la nominiamo. Solo l'avvocato comunica con lei.
 - [ ] Analisi dei vocali da 7 minuti
 - [ ] Rilevamento "story vista ma messaggio no"
 - [ ] Notifica automatica agli amici quando lo score supera 80
-- [ ] Integrazione con lo psicologo
+- [ ] Addestramento per il riconoscimento delle idee politiche
+- [ ] Integrazione con lo psicologo (Unobravo)
 
 ---
 
