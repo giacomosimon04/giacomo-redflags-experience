@@ -10,7 +10,7 @@
 ![therapy](https://img.shields.io/badge/terapia-in%20corso-blueviolet)
 ![hinge](https://img.shields.io/badge/date%20su%20hinge-~20-ff69b4)
 
-**Tu le scrivi un poema. Lei risponde "ok." (Porco Dio) alle 3 di notte.**
+**Tu le scrivi un poema. Lei risponde "ok." (Porco D//) alle 3 di notte.**
 **È una red flag? Non chiederlo agli amici. Chiedilo a una AI.**
 
 </div>
