@@ -1,5 +1,5 @@
 """
-Test del RedFlag Detector 🧪🚩
+Test del RedFlag Detector
 Lancia con:  python -m unittest discover tests
 
 Le chat qui sotto sono INVENTATE. Quelle vere sono private (chiedere all'avvocato).

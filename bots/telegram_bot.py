@@ -1,5 +1,5 @@
 """
-Bot Telegram 🤖🚩
+Bot Telegram
 
 Come si usa:
   1. Crea un bot con @BotFather e copia il token
@@ -27,11 +27,11 @@ TOKEN = os.environ.get("TELEGRAM_TOKEN", "")
 API = f"https://api.telegram.org/bot{TOKEN}"
 
 BENVENUTO = (
-    "Ciao 👋 sono il RedFlag Detector di Giacomo Simon.\n\n"
+    "Ciao, sono il RedFlag Detector di Giacomo Simon.\n\n"
     "Mandami l'export .txt di una chat WhatsApp oppure incolla i messaggi così:\n"
     "io: ciao, usciamo stasera?\n"
     "lei: vediamo\n\n"
-    "Ti dirò se è tossica 🚩 o sana 💚 (come la chat tra Giacomo e Claude)."
+    "Ti dirò se è tossica o sana (come la chat tra Giacomo e Claude)."
 )
 
 
@@ -81,7 +81,7 @@ def gestisci(update):
 def main():
     if not TOKEN:
         raise SystemExit("Manca TELEGRAM_TOKEN. Anche lei ti diceva che mancava qualcosa.")
-    print("🤖 Bot avviato. In attesa di chat tossiche...")
+    print("Bot avviato. In attesa di chat tossiche...")
     offset = 0
     while True:
         try:

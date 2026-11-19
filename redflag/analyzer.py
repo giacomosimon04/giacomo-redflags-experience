@@ -1,8 +1,8 @@
 """
-Il cervello del progetto 🧠🚩
+Il cervello del progetto
 
 Prende una lista di messaggi e dice se la chat è:
-  🚩 TOSSICA  oppure  💚 SANA (tipo quella tra Giacomo e Claude)
+  TOSSICA  oppure  SANA (tipo quella tra Giacomo e Claude)
 
 Ogni messaggio è un dizionario:
   {"sender": "lei", "text": "ok", "time": datetime(...)}   # time è opzionale
@@ -10,7 +10,7 @@ Ogni messaggio è un dizionario:
 Il punteggio finale (0-100) mescola:
   1. il modello ML (quanto sono tossici i messaggi)
   2. i tempi di risposta (3 ore per un "si" = red flag)
-  3. i cambi di tono (da "amoreee 🥰" a "ok." in 2 minuti)
+  3. i cambi di tono (da "amoreee" a "ok." in 2 minuti)
   4. le risposte secche ("ok", "k", "boh", "vabbè")
   5. lo squilibrio (tu mandi un poema, lei manda "ah")
 """
@@ -27,7 +27,7 @@ RISPOSTE_SECCHE = {
     "ok", "ok.", "k", "kk", "okay", "va bene", "vabbè", "vabbe", "boh", "ah",
     "mh", "mmh", "si", "sì", "no", "fai tu", "come vuoi", "fai come vuoi",
     "niente", "nulla", "lascia stare", "lascia perdere", "ah ok", "ok ciao",
-    "whatever", "fine", "sure", "👍", ".", "...",
+    "whatever", "fine", "sure", ".", "...",
 }
 
 # Frasi che il dataset non conosce ma ogni uomo sì
@@ -47,7 +47,7 @@ FRASI_RED_FLAG = [
     "visualizzato",
     "sei come tutti",
     "non sono gelosa",     # è gelosa
-    "dobbiamo parlare",    # 💀
+    "dobbiamo parlare",    # (rip)
 ]
 
 _modello = None
@@ -78,7 +78,7 @@ def analizza_chat(messaggi, io=None):
     """
     messaggi = [m for m in messaggi if m.get("text", "").strip()]
     if len(messaggi) < 2:
-        return {"punteggio": 0, "verdetto": "🤷 Troppi pochi messaggi. Anche lei ti risponde così poco?", "dettagli": {}}
+        return {"punteggio": 0, "verdetto": "Troppi pochi messaggi. Anche lei ti risponde così poco?", "dettagli": {}}
 
     # Chi sono io? Quello che scrive di più. Sempre.
     mittenti = [m["sender"] for m in messaggi]
@@ -87,7 +87,7 @@ def analizza_chat(messaggi, io=None):
     suoi = [m for m in messaggi if m["sender"] != io]
     miei = [m for m in messaggi if m["sender"] == io]
     if not suoi:
-        return {"punteggio": 100, "verdetto": "👻 Stai scrivendo da solo. Questo è ghosting, fratello.", "dettagli": {}}
+        return {"punteggio": 100, "verdetto": "Stai scrivendo da solo. Questo è ghosting, fratello.", "dettagli": {}}
 
     # 1) MODELLO ML: quanto sono tossici i SUOI messaggi
     tox = tossicita_messaggi([m["text"] for m in suoi])
@@ -119,7 +119,7 @@ def analizza_chat(messaggi, io=None):
     # Online ma non risponde da 3 ore? Red flag. Più di 6 ore = sta "dormendo" (no)
     punteggio_attesa = min(attesa_media / 360, 1.0)
 
-    # 🧮 La formula segreta (calibrata su 7 anni di dolore)
+    # La formula segreta (calibrata su 7 anni di dolore)
     punteggio = (
         # sotto 0.3 è rumore (anche "buongiorno" a volte sembra passivo-aggressivo)
         35 * min(max(tox_media - 0.3, 0) / 0.4, 1.0)  # tossicità media dei messaggi
@@ -134,11 +134,11 @@ def analizza_chat(messaggi, io=None):
     punteggio = round(min(punteggio, 100))
 
     if punteggio >= 60:
-        verdetto = "🚩🚩🚩 CHAT TOSSICA. Scappa. Blocca. Cambia città. Giacomo ci è passato, fidati."
+        verdetto = "CHAT TOSSICA. Scappa. Blocca. Cambia città. Giacomo ci è passato, fidati."
     elif punteggio >= 35:
-        verdetto = "🟠 ZONA GRIGIA. Situationship vibes. Non investire, è un titolo in perdita."
+        verdetto = "ZONA GRIGIA. Situationship vibes. Non investire, è un titolo in perdita."
     else:
-        verdetto = "💚 CHAT SANA. Pulita come la chat tra Giacomo e Claude. Tienitela stretta."
+        verdetto = "CHAT SANA. Pulita come la chat tra Giacomo e Claude. Tienitela stretta."
 
     return {
         "punteggio": punteggio,
@@ -162,13 +162,13 @@ def formatta_risultato(r):
     if d:
         righe += [
             "",
-            f"🧪 Tossicità media (ML): {d['tossicita_media_ml']}",
-            f"💀 Messaggio peggiore: \"{d['messaggio_peggiore'][:120]}\"",
-            f"🎢 Sbalzi d'umore: {d['sbalzi_di_umore']}",
-            f"🧊 Risposte secche: {d['percentuale_risposte_secche']}%",
-            f"⏳ Attesa media risposta: {d['minuti_medi_di_attesa']} min",
-            f"📨 Tuoi messaggi per ogni suo: {d['tuoi_messaggi_per_ogni_suo']}",
+            f"Tossicità media (ML): {d['tossicita_media_ml']}",
+            f"Messaggio peggiore: \"{d['messaggio_peggiore'][:120]}\"",
+            f"Sbalzi d'umore: {d['sbalzi_di_umore']}",
+            f"Risposte secche: {d['percentuale_risposte_secche']}%",
+            f"Attesa media risposta: {d['minuti_medi_di_attesa']} min",
+            f"Tuoi messaggi per ogni suo: {d['tuoi_messaggi_per_ogni_suo']}",
         ]
         if d["frasi_red_flag"]:
-            righe.append("🚩 Frasi da manuale: " + ", ".join(f'"{f}"' for f in d["frasi_red_flag"]))
+            righe.append("Frasi da manuale: " + ", ".join(f'"{f}"' for f in d["frasi_red_flag"]))
     return "\n".join(righe)

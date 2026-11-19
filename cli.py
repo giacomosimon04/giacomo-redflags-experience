@@ -14,7 +14,7 @@ from redflag.whatsapp_parser import leggi_chat
 
 
 def main():
-    p = argparse.ArgumentParser(description="🚩 È una red flag o no? Scoprilo prima di lei.")
+    p = argparse.ArgumentParser(description="È una red flag o no? Scoprilo prima di lei.")
     p.add_argument("chat", help="file .txt esportato da WhatsApp")
     p.add_argument("--io", help="il tuo nome nella chat (default: chi scrive di più, cioè tu)")
     args = p.parse_args()

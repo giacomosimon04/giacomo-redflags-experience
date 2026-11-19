@@ -1,5 +1,5 @@
 """
-Server webhook per WhatsApp (via Kapso) e Instagram (via Meta Business) 📲🚩
+Server webhook per WhatsApp (via Kapso) e Instagram (via Meta Business)
 
 Come funziona:
   - Inoltri/scrivi i messaggi al numero WhatsApp o all'account Instagram del bot
@@ -41,7 +41,7 @@ IG_ACCESS_TOKEN = os.environ.get("IG_ACCESS_TOKEN", "")
 IG_URL = os.environ.get("IG_URL", "https://graph.instagram.com/v21.0/me/messages")
 VERIFY_TOKEN = os.environ.get("META_VERIFY_TOKEN", "redflag")
 
-app = FastAPI(title="RedFlag Detector 🚩")
+app = FastAPI(title="RedFlag Detector")
 
 # Memoria delle chat in RAM: niente database, niente salvataggi.
 # Le chat restano private (lo ha detto anche l'avvocato).
@@ -53,7 +53,7 @@ def gestisci_testo(utente, testo):
     testo = testo.strip()
     if testo.lower() == "/reset":
         chat_in_corso[utente].clear()
-        return "🧹 Chat dimenticata. Ora dimentica anche lei."
+        return "Chat dimenticata. Ora dimentica anche lei."
     if testo.lower() == "/analizza":
         r = analizza_chat(list(chat_in_corso[utente]), io="io")
         return formatta_risultato(r)
@@ -142,4 +142,4 @@ async def instagram_webhook(request: Request):
 
 @app.get("/")
 def home():
-    return {"status": "🚩 RedFlag Detector online. Lei invece no, ma ha visualizzato."}
+    return {"status": "RedFlag Detector online. Lei invece no, ma ha visualizzato."}
