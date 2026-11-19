@@ -205,3 +205,10 @@ Non la nominiamo. Solo l'avvocato comunica con lei.
 Lascia una stella se anche tu hai ricevuto un "ok." che ti ha rovinato la settimana.
 
 </div>
+
+---
+
+## Licenza
+
+Gratis, ma se ci esci a cena (anche se il modello ti ha detto **rosso**) la cena la offri anche a me.
+Dettagli completi in [`LICENSE`](LICENSE) (LGMLCLP — Licenza "Gratis ma la cena la paghi").
