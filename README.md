@@ -87,14 +87,14 @@ Il detector si attacca direttamente a dove avvengono i crimini:
 
 | App | Come | File |
 |-----|------|------|
-| 💬 **WhatsApp** | via [Kapso](https://kapso.ai) (API WhatsApp) | `bots/webhook_server.py` |
-| 📸 **Instagram** | via Meta Business (Instagram Messaging API) | `bots/webhook_server.py` |
-| ✈️ **Telegram** | bot con @BotFather | `bots/telegram_bot.py` |
-| 💻 **Terminale** | per chi soffre in silenzio | `cli.py` |
+|  **WhatsApp** | via [Kapso](https://kapso.ai) (API WhatsApp) | `bots/webhook_server.py` |
+|  **Instagram** | via Meta Business (Instagram Messaging API) | `bots/webhook_server.py` |
+|  **Telegram** | bot con @BotFather | `bots/telegram_bot.py` |
+|  **Terminale** | per chi soffre in silenzio | `cli.py` |
 
 ---
 
-## 🚀 Installazione
+##  Installazione
 
 ```bash
 git clone https://github.com/giacomosimon04/giacomo-redflags-experience
@@ -109,7 +109,7 @@ I pesi sono già inclusi. Se vuoi riaddestrare da zero (sul dataset open source,
 python -m redflag.train
 ```
 
-### 💻 Da terminale
+###  Da terminale
 
 Esporta la chat da WhatsApp (*chat → ⋮ → Esporta chat → Senza media*) e:
 
