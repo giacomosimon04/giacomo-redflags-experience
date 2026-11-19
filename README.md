@@ -17,16 +17,16 @@
 
 ---
 
-## 🧠 Cos'è
+##  Cos'è
 
 **RedFlag Detector** è un modello di Machine Learning che **predice se una relazione è tossica** analizzando la chat:
 
-- 🧪 **la tossicità dei messaggi** (modello ML vero, non vibes)
-- 🎢 **i cambi di tono** (da "amoreee 🥰" a "ok." in 4 minuti)
-- ⏳ **i tempi di risposta** (online da 3 ore, risponde domani)
-- 🧊 **le risposte secche** ("ok", "k", "boh", "fai come vuoi") (Le uso io queste)
-- 📨 **lo squilibrio** (tu: Divina Commedia. lei: "ah") Vero.....
-- 🚩 **le frasi da manuale** ("non ho niente", "chi è quella?", "dobbiamo parlare" "Chic********" 💀)
+-  **la tossicità dei messaggi** (modello ML vero, non vibes)
+-  **i cambi di tono** (da "amoreee 🥰" a "ok." in 4 minuti)
+-  **i tempi di risposta** (online da 3 ore, risponde domani)
+-  **le risposte secche** ("ok", "k", "boh", "fai come vuoi") (Le uso io queste)
+-  **lo squilibrio** (tu: Divina Commedia. lei: "ah") Vero.....
+-  **le frasi da manuale** ("non ho niente", "chi è quella?", "dobbiamo parlare" "Chic********" 💀)
 
 Alla fine ti dà un verdetto:
 
@@ -41,7 +41,7 @@ Alla fine ti dà un verdetto:
 
 ---
 
-## 📚 Dataset di addestramento
+##  Dataset di addestramento
 
 Il modello è stato addestrato su una **enorme pool di dati** raccolti sul campo, con anni di sacrificio personale, nella **mia** storia:
 
@@ -143,7 +143,7 @@ io: ok dimmi tu
 lei: fai come vuoi
 ```
 
-### 💬 WhatsApp (Kapso) + 📸 Instagram (Meta Business)
+###  WhatsApp (Kapso) +  Instagram (Meta Business)
 
 ```bash
 export KAPSO_API_KEY="..."
